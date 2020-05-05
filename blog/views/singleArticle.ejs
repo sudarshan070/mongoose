@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+  </head>
+  <body>
+    <h2>Article</h2>
+    <h3>Title: <%= article.title %></h3>
+    <h3>Author: <%= article.author %></h3>
+    <h3>Description: <%= article.description %></h3>
+    <div class="singleArticle">
+      <h3 class="btn">
+        <a href="/article/<%=article.id%>/likes">Likes: <%= article.like %></a>
+      </h3>
+      <h3 class="btn"><a href="/article/<%=article.id%>/delete">Delete </a></h3>
+      <h3 class="btn"><a href="/article">Home</a></h3>
+      <h3 class="btn"><a href="/article/<%=article.id%>/edit">Edit</a></h3>
+    </div>
+  </body>
+</html>

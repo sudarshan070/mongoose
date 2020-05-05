@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+  </head>
+  <body>
+    <h1>Create Article</h1>
+    <button class="btn"><a href="/article">Home</a></button>
+    <div class="form-warp">
+      <form action="/article/new" method="POST">
+        <input class="input" type="text" name="title" placeholder="Title" />
+        <input
+          class="input"
+          type="text"
+          name="author"
+          placeholder="Author name"
+        />
+        <textarea
+          class="input"
+          type="text"
+          name="description"
+          placeholder="Text write"
+        ></textarea>
+        <input class="btn" type="submit" />
+      </form>
+    </div>
+  </body>
+</html>
